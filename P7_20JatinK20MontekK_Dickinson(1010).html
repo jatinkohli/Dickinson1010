@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Francois One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Creepster' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Codystar' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Doppio One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Finger Paint' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fontdiner Swanky' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Jua' rel='stylesheet'>
+
+<link href = 'https://imgur.com/9F1c2Yk' rel='stylesheet'>
+<link href = 'https://imgur.com/9F1c2Yk' rel='stylesheet'>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+
+$(document).ready(function()
+{	
+	$("#second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth, #eleventh, #twelfth").hide();
+
+	var row = 1;
+	var isDestroyed = new Array(7).fill(false);
+
+	function isRowGone(r)
+	{
+		switch(r)
+		{
+		case 13: return;		
+
+		case 12:
+			var i = 0;
+			while (i < 6)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			document.body.style.backgroundImage = "";
+			$("p:lang(1)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(2)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(3)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(4)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(5)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(6)").fadeTo(1000, 1).addClass("white");
+			$("p:lang(7)").fadeTo(1000, 1).addClass("white");
+			$("#fourth").attr("margin-left", "20");
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 11:
+			var i = 0;
+			while (i < 7)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#twelfth").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://i.imgur.com/FxrRahe.png')";
+document.body.style.backgroundPosition = '50% 50%';
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 10:
+			var i = 0;
+			while (i < 4)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#eleventh").fadeTo(1000, 1);
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 9:
+			var i = 0;
+			while (i < 6)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#tenth").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://i.imgur.com/jNtBplf.png')";
+document.body.style.backgroundPosition = '50% 50%';
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 8:
+			var i = 0;
+			while (i < 4)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#ninth").fadeTo(1000, 1);
+document.body.style.backgroundPosition = '50% 80%';
+document.body.style.backgroundImage = "url('https://imgur.com/h5Zs1Ob.png')";
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 7:
+			var i = 0;
+			while (i < 5)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#eighth").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://imgur.com/gPbYpie.png')";
+document.body.style.backgroundPosition = '50% 80%';
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		
+		case 6:
+			var i = 0;
+			while (i < 4)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#seventh").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://imgur.com/LxBImBl.png')";
+document.body.style.backgroundPosition = '50% 25%';
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 5:
+			var i = 0;
+			while (i < 7)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#sixth").fadeTo(1000, 1);
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 4:
+			var i = 0;
+			while (i < 4)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#fifth").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://imgur.com/x5gyGhC.png')";
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 3:
+			var i = 0;
+			while (i < 2)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#fourth").fadeTo(1000, 1);
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 2:
+			var i = 0;
+			while (i < 3)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#third").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://i.imgur.com/sFt3FiM.png')";
+document.body.style.backgroundPosition = '50% 0%';
+			row++;
+			isDestroyed.fill(false);
+			return;
+
+		case 1:
+			var i = 0;
+			while (i < 6)
+			{
+				if (isDestroyed[i] == false)
+				{
+					return;
+				}
+				i++;
+			}
+			$("#second").fadeTo(1000, 1);
+document.body.style.backgroundImage = "url('https://imgur.com/9F1c2Yk.png')";
+			row++;
+			isDestroyed.fill(false);
+			return;
+		}
+
+	}
+
+	$("p:lang(1)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[0] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(2)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[1] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(3)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[2] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(4)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[3] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(5)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[4] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(6)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[5] = true;
+		isRowGone(row);
+		return;
+	});
+
+	$("p:lang(7)").on("click", function()
+	{	
+		$(this).fadeTo(1000, 0);
+		isDestroyed[6] = true;
+		isRowGone(row);
+		return;
+	});
+
+});
+
+</script>
+
+<style>
+
+body
+{
+	background-color: black;
+	background-repeat: no-repeat;
+	background-position:50% 0%;
+}
+
+.titleFormat
+{
+	text-align: center;
+        margin-top: 75px;
+	margin-bottom: 50px;
+	font-family: Doppio One;
+	font-size: large;
+	color: white;
+}
+
+.gridTwo
+{
+	display: grid;
+	grid: '. .';
+	justify-content: center;
+	height: 50px;
+	color: white;
+}
+
+.gridThree
+{
+	display: grid;
+	grid: '. . .';
+	justify-content: center;
+	height: 50px;
+	color: white;	
+}
+
+.gridFour
+{
+	display: grid;
+	grid: '. . . .';
+	justify-content: center;
+	height: 50px;
+	color: white;		
+}
+
+.gridFive
+{
+	display: grid;
+	grid: '. . . . .';
+	justify-content: center;
+	height: 50px;
+	color: white;		
+}
+
+.gridSix
+{
+	display: grid;
+	grid: '. . . . . .';
+	justify-content: center;
+	height: 50px;	
+	color: white;
+}
+
+.gridSeven
+{
+	display: grid;
+	grid: '. . . . . . .';
+	justify-content: center;
+	height: 50px;
+	color: white;	
+}
+
+.gridOverall
+{
+	display: grid;
+	text-align: center;
+	font-size: 19px;
+	color: white;
+	opacity: 1;
+}
+
+.white
+{
+	color: white;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id = title class = "titleFormat">
+"Crumbling is not an instant�s Act" (1010) interpreted by Jatin and Montek
+</div>
+
+<div id = overall class = gridOverall>
+
+	<div id = first class = gridSix
+	style = "grid-template-columns: 115px 35px 35px 45px 100px 50px;
+	font-family: Archivo Black; margin-left: 25px;">
+		<p lang = "1">Crumbling</p>
+		<p lang = "2">is</p>
+		<p lang = "3">not</p>
+		<p lang = "4">an</p>
+		<p lang = "5">instant's</p>
+		<p lang = "6">Act</p>
+	</div>
+
+	<div id = second class = gridThree
+	style = "grid-template-columns: 20px 160px 50px;
+	font-family: Archivo Black; color: black;">
+		<p lang = "1">A</p>
+		<p lang = "2">fundemental</p>
+		<p lang = "3">pause</p>
+	</div>
+
+	<div id = third class = gridTwo 
+	style = "grid-template-columns: 165px 95px;
+	font-family: Archivo Black; color: black;">
+		<p lang = "1">Dilapidation's</p>
+		<p lang = "2">processes</p>
+	</div>
+
+	<div id = fourth class = gridFour
+	style = "grid-template-columns: 45px 105px 75px 20px;
+	font-family: Francois One; font-size: 22px; margin-left: 60px; 
+	color: black;">
+		<p lang = "1">Are</p>
+		<p lang = "2">organized</p>
+		<p lang = "3">Decays</p>
+		<p lang = "4">-</p>
+	</div>
+
+
+	<div id = fifth class = gridSeven
+	style = "grid-template-columns: 45px 50px 20px 90px 40px 15px 100px; font-family: Allerta; margin-left: 30px;">
+		<p lang = "1">'Tis</p>
+		<p lang = "2">first</p>
+		<p lang = "3">a</p>
+		<p lang = "4">Cobweb</p>
+		<p lang = "5">on</p>
+		<p lang = "6">the</p>
+		<p lang = "7">Soul</p>
+	</div>
+
+	<div id = sixth class = gridFour
+	style = "grid-template-columns: 40px 70px 45px 50px;
+		font-family: Allerta Stencil; margin-left: 15px;">
+		<p lang = "1">A</p>
+		<p lang = "2">Cuticle</p>
+		<p lang = "3">of</p>
+		<p lang = "4">Dust</p>
+	</div>
+
+	<div id = seventh class = gridFive
+	style = "grid-template-columns: 45px 50px 40px 20px 80px;
+		font-family: Jua; margin-left: 27px;">
+		<p lang = "1">A</p>
+		<p lang = "2">Borer</p>
+		<p lang = "3">in</p>
+		<p lang = "4">the</p>
+		<p lang = "5">Axis</p>
+	</div>
+
+	<div id = eighth class = gridFour
+	style = "grid-template-columns: 55px 105px 80px 25px;
+		font-family: Finger Paint; margin-left: 15px;">
+		<p lang = "1">An</p>
+		<p lang = "2">Elemental</p>
+		<p lang = "3">Rust</p>
+		<p lang = "4">-</p>
+	</div>
+
+
+	<div id = ninth class = gridSix
+	style = "grid-template-columns: 35px 40px 55px 35px 50px 65px;
+		font-family: Creepster; margin-left: 30px;">
+		<p lang = "1">Ruin</p>
+		<p lang = "2">is</p>
+		<p lang = "3">formal</p>
+		<p lang = "4">-</p>
+		<p lang = "5">Devil's</p>
+		<p lang = "6">work</p>
+	</div>
+
+	<div id = tenth class = gridFour
+	style = "grid-template-columns: 130px 60px 40px 60px;
+		font-family: Fontdiner Swanky; margin-left: 35px;">
+		<p lang = "1">Consecutive</p>
+		<p lang = "2">and</p>
+		<p lang = "3">slow</p>
+		<p lang = "4">-</p>
+	</div>
+
+	<div id = eleventh class = gridSeven
+	style = "grid-template-columns: 50px 40px 45px 90px 50px 30px 100px; font-family: Cinzel; margin-left: 35px;">
+		<p lang = "1">Fail</p>
+		<p lang = "2">in</p>
+		<p lang = "3">an</p>
+		<p lang = "4">instant,</p>
+		<p lang = "5">no</p>
+		<p lang = "6">man</p>
+		<p lang = "7">did</p>
+	</div>
+
+	<div id = twelfth class = gridSix
+	style = "grid-template-columns: 95px 30px 25px 120px 40px 45px;
+		font-family: Codystar; margin-left: 30px;">
+		<p lang = "1">Slipping</p>
+		<p lang = "2">-</p>
+		<p lang = "3">is</p>
+		<p lang = "4">Crashe's</p>
+		<p lang = "5">law</p>
+		<p lang = "6">-</p>
+	</div>	
+
+</div>
+
+</body>
+
